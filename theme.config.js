@@ -1,4 +1,4 @@
-import Docsearch from './Components/docsearch'
+import Algoliasearch from './Components/Algoliasearch'
 export default {
   github: 'https://github.com/shaileshofficial2019/nextjs-docs-nextra',
   docsRepositoryBase: 'https://github.com/shaileshofficial2019/nextjs-docs-nextra/blob/master',
@@ -59,7 +59,7 @@ export default {
     </>
   ),
   search: true,
-  customSearch: <Docsearch/>,
+  customSearch: <Algoliasearch/>,
   prevLinks: true,
   nextLinks: true,
   footer: true,
