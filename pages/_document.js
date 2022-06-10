@@ -18,6 +18,7 @@ export default function Document() {
             {dd}
             </script>
       <body>
+        <div id="search"></div>
         <Main />
         <NextScript />
     <script
