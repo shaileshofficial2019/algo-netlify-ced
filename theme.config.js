@@ -1,3 +1,4 @@
+import Docsearch from './Components/docsearch'
 export default {
   github: 'https://github.com/shaileshofficial2019/nextjs-docs-nextra',
   docsRepositoryBase: 'https://github.com/shaileshofficial2019/nextjs-docs-nextra/blob/master',
@@ -58,6 +59,7 @@ export default {
     </>
   ),
   search: true,
+  customSearch: <Docsearch/>,
   prevLinks: true,
   nextLinks: true,
   footer: true,
