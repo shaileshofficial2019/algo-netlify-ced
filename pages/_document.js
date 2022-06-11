@@ -5,7 +5,7 @@ export default function Document() {
         container: '#docsearch',
         appId: process.env.DOC_APP_ID,
         apiKey: process.env.DOC_API_KEY,
-        indexName: process.env.DOC_INDEX.NAME,
+        indexName: process.env.DOC_INDEX_NAME,
         getMissingResultsUrl({ query }) {
     return `https://github.com/shaileshofficial2019/algo-netlify-ced/issues/new?title=${query}`;
   }
