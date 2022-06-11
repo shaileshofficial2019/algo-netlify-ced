@@ -1,15 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
-    const dd= `docsearch({
-        container: '#docsearch',
-        appId: process.env.DOC_APP_ID,
-        apiKey: process.env.DOC_API_KEY,
-        indexName: process.env.DOC_INDEX_NAME,
-        getMissingResultsUrl({ query }) {
-    return `https://github.com/shaileshofficial2019/algo-netlify-ced/issues/new?title=${query}`;
-  }
-});`
   return (
     <Html>
       <Head>
@@ -17,7 +8,14 @@ export default function Document() {
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
       </Head>
         <script type="text/javascript">
-            {dd}
+            docsearch({
+        container: '#docsearch',
+        appId: process.env.DOC_APP_ID,
+        apiKey: process.env.DOC_API_KEY,
+        indexName: process.env.DOC_INDEX_NAME,
+        getMissingResultsUrl({ query }) {
+            return `https://github.com/shaileshofficial2019/algo-netlify-ced/issues/new?title=${query}`;
+         }});
             </script>
       <body>
         <Main />
